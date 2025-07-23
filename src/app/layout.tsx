@@ -20,9 +20,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: '🦅 @prodbyeagle',
-	description: 'Eagle Template for Next.js',
-	icons: 'https://kappa.lol/WTiY5',
+	title: 'psychiatrie regeln',
+	icons: 'https://em-content.zobj.net/source/telegram/386/skull_1f480.webp',
 };
 
 export default function RootLayout({
