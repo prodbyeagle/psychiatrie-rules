@@ -19,7 +19,9 @@ export const rules: Rule[] = [
 				sprechfehler müssen sofort{' '}
 				<HoverCard>
 					<HoverCardTrigger className='underline decoration-dotted cursor-help text-primary hover:text-primary/80 transition-colors'>
-						dokumentiert
+						<span className='text-primary font-medium'>
+							dokumentiert
+						</span>
 					</HoverCardTrigger>
 					<HoverCardContent className='p-3 min-w-md'>
 						<div className='space-y-2'>
@@ -36,11 +38,13 @@ export const rules: Rule[] = [
 					</HoverCardContent>
 				</HoverCard>{' '}
 				werden! wenn während des schreibens eines sprachfehlers ein
-				weiterer sprachfehler passiert, z. b. beim aussprechen oder
+				weiterer sprachfehler passiert, z. b. beim aussprechen oder
 				verschreiben, muss dieser ebenfalls{' '}
 				<HoverCard>
 					<HoverCardTrigger className='underline decoration-dotted cursor-help text-primary hover:text-primary/80 transition-colors'>
-						dokumentiert
+						<span className='text-primary font-medium'>
+							dokumentiert
+						</span>
 					</HoverCardTrigger>
 					<HoverCardContent className='p-3 min-w-md'>
 						<div className='space-y-2'>
@@ -64,49 +68,68 @@ export const rules: Rule[] = [
 			</>
 		),
 		note: (
-			<p className='mt-2 text-xs text-muted-foreground'>
+			<>
 				bitte sorgfältig dokumentieren, um missverständnisse zu
 				vermeiden.
-			</p>
-		),
-	},
-	{
-		content: (
-			<>was in der psychiatrie passiert, bleibt in der psychiatrie.</>
+			</>
 		),
 	},
 	{
 		content: (
 			<>
-				in der psychiatrie darf man dinge tun, die sonst in der
-				öffentlichkeit nicht erlaubt wären.
+				was in der <span className='text-primary'>psychiatrie</span>{' '}
+				passiert, bleibt in der{' '}
+				<span className='text-primary'>psychiatrie</span>.
 			</>
 		),
 	},
 	{
-		content: <>wir schließen niemanden aus.</>,
+		content: (
+			<>
+				in der <span className='text-primary'>psychiatrie</span> darf
+				man dinge tun, die sonst in der öffentlichkeit{' '}
+				<span className='text-destructive font-medium'>
+					nicht erlaubt
+				</span>{' '}
+				wären.
+			</>
+		),
+	},
+	{
+		content: (
+			<>
+				wir schließen <span className='font-semibold'>niemanden</span>{' '}
+				aus.
+			</>
+		),
 		note: (
-			<p className='mt-2 text-xs text-muted-foreground'>
+			<>
 				zählt nicht für personen die nicht online sind. ( ich denke mal
 				das ist klar )
-			</p>
-		),
-	},
-	{
-		content: (
-			<>
-				man darf beleidigen, doch nicht auf die eltern oder andere
-				erwachsene gehen.
 			</>
 		),
 	},
 	{
 		content: (
 			<>
-				die psychiatrie sollte, wenn möglich, immer einen laufenden{' '}
+				man darf{' '}
+				<span className='text-primary font-medium'>beleidigen</span>,
+				doch nicht auf die{' '}
+				<span className='text-destructive'>eltern</span> oder andere{' '}
+				<span className='text-destructive'>erwachsene</span> gehen.
+			</>
+		),
+	},
+	{
+		content: (
+			<>
+				die <span className='text-primary'>psychiatrie</span> sollte,
+				wenn möglich, immer einen laufenden{' '}
 				<HoverCard>
 					<HoverCardTrigger className='underline decoration-dotted cursor-help text-primary hover:text-primary/80 transition-colors'>
-						recorder
+						<span className='text-primary font-medium'>
+							recorder
+						</span>
 					</HoverCardTrigger>
 					<HoverCardContent className='p-3'>
 						<div className='flex items-center gap-3'>
@@ -131,6 +154,49 @@ export const rules: Rule[] = [
 		),
 	},
 	{
-		content: <>versprecher und bilder bitte trennen (words und gallery)</>,
+		content: (
+			<>
+				versprecher und bilder bitte{' '}
+				<span className='text-primary'>trennen</span> (
+				<code className='text-sm'>words</code> und{' '}
+				<code className='text-sm'>gallery</code>)
+			</>
+		),
+	},
+	{
+		content: (
+			<>
+				wenn aussagen geschehen, wird man sich{' '}
+				<strong>nicht äußern</strong> – auch genannt{' '}
+				<span className='italic text-primary'>disziplin</span> (nicht
+				lachen, augen schließen oder sonst irgendeine reaktion).
+			</>
+		),
+	},
+	{
+		content: (
+			<>
+				<code className='text-sm'>ironie</code> ist{' '}
+				<span className='text-destructive font-semibold'>
+					strengstens
+				</span>{' '}
+				untersagt, außer sie ist <strong>offensichtlich</strong> und{' '}
+				<em>wirklich lustig</em>.
+			</>
+		),
+		note: <>sollte jemand die ironie nicht erkennen, zählt sie nicht.</>,
+	},
+	{
+		content: (
+			<>
+				die <span className='text-primary'>regelauslegung</span> kann je
+				nach <span className='italic'>tagesform</span> angepasst werden
+				–{' '}
+				<span className='text-muted-foreground'>
+					beschwerden zwecklos
+				</span>
+				.
+			</>
+		),
 	},
 ];
